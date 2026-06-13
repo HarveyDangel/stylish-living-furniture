@@ -8,7 +8,7 @@ const branches = [
     contact: "(+63) 917 145 3352",
     hours: "8:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/tacloban.jpg",
+    image: "/Images/Branches/tacloban.webp",
   },
   {
     name: "Cebu",
@@ -16,7 +16,7 @@ const branches = [
     contact: "(+63) 917 145 3747",
     hours: "8:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/cebu.jpg",
+    image: "/Images/Branches/cebu.webp",
   },
   {
     name: "Legazpi",
@@ -24,7 +24,7 @@ const branches = [
     contact: "(0917) 145 4271",
     hours: "9:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/legazpi.jpg",
+    image: "/Images/Branches/legazpi.webp",
   },
   {
     name: "Surigao",
@@ -32,7 +32,7 @@ const branches = [
     contact: "(+63) 917 145 3937",
     hours: "9:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/surigao.jpg",
+    image: "/Images/Branches/surigao.webp",
   },
   {
     name: "Catbalogan",
@@ -40,7 +40,7 @@ const branches = [
     contact: "(+63) 917 145 3722",
     hours: "9:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/catbalogan.jpg",
+    image: "/Images/Branches/catbalogan.webp",
   },
   {
     name: "Borongan",
@@ -48,7 +48,7 @@ const branches = [
     contact: "(0917) 712 5433",
     hours: "9:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/borongan.jpg",
+    image: "/Images/Branches/borongan.webp",
   },
   {
     name: "Guiuan",
@@ -56,7 +56,7 @@ const branches = [
     contact: "(+63) 917 622 0904",
     hours: "9:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/guiuan.jpg",
+    image: "/Images/Branches/guiuan.webp",
   },
   {
     name: "Maasin",
@@ -64,7 +64,7 @@ const branches = [
     contact: "(+63) 917 145 4269",
     hours: "9:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/maasin.jpg",
+    image: "/Images/Branches/maasin.webp",
   },
   {
     name: "Naval",
@@ -72,7 +72,7 @@ const branches = [
     contact: "(0917) 145 3710",
     hours: "8:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/naval.jpg",
+    image: "/Images/Branches/naval.webp",
   },
   {
     name: "Tandag",
@@ -80,7 +80,7 @@ const branches = [
     contact: "(+63) 917 145 3351",
     hours: "9:00 AM - 6:00 PM",
     days: "Monday to Saturday",
-    image: "/Images/Branches/tandag.jpg",
+    image: "/Images/Branches/tandag.webp",
   },
 ];
 

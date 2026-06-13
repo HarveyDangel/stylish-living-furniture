@@ -16,7 +16,7 @@ export default function Navbar() {
           className="relative block h-10 w-44 brightness-0 invert"
         >
           <Image
-            src="/Images/Contact/navbar-logo.png"
+            src="/Images/Contact/navbar-logo.webp"
             alt="Stylish Living Furniture"
             fill
             className="object-contain object-left"

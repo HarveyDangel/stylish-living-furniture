@@ -17,7 +17,7 @@ export default function Footer() {
           <div>
             <div className="relative mb-4 h-12 w-48">
               <Image
-                src="/Images/Contact/footer-logo.png"
+                src="/Images/Contact/footer-logo.webp"
                 alt="Stylish Living Furniture"
                 fill
                 className="object-contain object-left"

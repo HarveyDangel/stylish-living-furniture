@@ -7,7 +7,7 @@ export default function AboutSection() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
             <Image
-              src="/Images/about.jpg"
+              src="/Images/about.webp"
               alt="About Stylish Living Furniture"
               fill
               className="object-cover"

@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url(/Images/hero.jpg)" }}
+        style={{ backgroundImage: "url(/Images/hero.webp)" }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
       <div className="relative z-10 mx-auto max-w-[1280px] px-5 text-center md:px-16">

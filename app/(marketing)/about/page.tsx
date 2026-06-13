@@ -6,7 +6,7 @@ export default function AboutPage() {
       <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url(/Images/about.jpg)" }}
+          style={{ backgroundImage: "url(/Images/about.webp)" }}
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 mx-auto max-w-[1280px] px-5 text-center md:px-16">
