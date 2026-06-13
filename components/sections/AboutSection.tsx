@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutSection() {
   return (
@@ -31,9 +32,16 @@ export default function AboutSection() {
               </p>
             </div>
 
+            <Link
+              href="/about"
+              className="mt-6 inline-block rounded bg-secondary-container px-8 py-2.5 text-sm font-semibold uppercase tracking-[0.05em] text-black no-underline transition-all hover:brightness-110"
+            >
+              Read More
+            </Link>
+
             <div className="mt-10 grid grid-cols-3 gap-6 border-t border-outline-variant pt-10 text-center">
               <div>
-                <p className="headline-sm text-primary">10+</p>
+                <p className="headline-sm text-primary">30+</p>
                 <p className="label-md text-on-surface-variant mt-1">Years</p>
               </div>
               <div>
@@ -41,7 +49,7 @@ export default function AboutSection() {
                 <p className="label-md text-on-surface-variant mt-1">Branches</p>
               </div>
               <div>
-                <p className="headline-sm text-primary">10K+</p>
+                <p className="headline-sm text-primary">100+</p>
                 <p className="label-md text-on-surface-variant mt-1">Happy Clients</p>
               </div>
             </div>

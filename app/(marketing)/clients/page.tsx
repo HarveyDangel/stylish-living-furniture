@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { clientGroups } from "@/data/clients";
+import CTASection from "@/components/sections/CTASection";
 
 export default function ClientsPage() {
   return (
@@ -44,6 +45,12 @@ export default function ClientsPage() {
           ))}
         </div>
       </section>
+
+      <CTASection
+        title="Be One of Our Partners"
+        description="Join the growing family of government agencies, LGUs, academic institutions, and private organizations that trust Stylish Living Furniture for their spaces."
+        buttonText="Inquire About Partnerships"
+      />
     </>
   );
 }

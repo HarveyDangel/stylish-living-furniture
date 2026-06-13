@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CTASection from "@/components/sections/CTASection";
 
 export default function AboutPage() {
   return (
@@ -136,6 +137,12 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <CTASection
+        title="Be Part of Our Story"
+        description="For over three decades, we have been furnishing homes and offices across the Visayas. Let us help write the next chapter is yours."
+        buttonText="Start Your Journey"
+      />
     </>
   );
 }

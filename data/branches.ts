@@ -25,6 +25,14 @@ export const branches: Branch[] = [
     image: "/Images/Branches/cebu.webp",
   },
   {
+    name: "Guiuan",
+    address: "National Highway Road, Brgy. Surok, Guiuan, Eastern Samar",
+    contact: "(+63) 917 622 0904",
+    hours: "9:00 AM - 6:00 PM",
+    days: "Monday to Saturday",
+    image: "/Images/Branches/guiuan.webp",
+  },
+  {
     name: "Legazpi",
     address: "Brgy. Centro Baybay, Peñarranda Street, Legazpi City, Albay",
     contact: "(0917) 145 4271",
@@ -55,14 +63,6 @@ export const branches: Branch[] = [
     hours: "9:00 AM - 6:00 PM",
     days: "Monday to Saturday",
     image: "/Images/Branches/borongan.webp",
-  },
-  {
-    name: "Guiuan",
-    address: "National Highway Road, Brgy. Surok, Guiuan, Eastern Samar",
-    contact: "(+63) 917 622 0904",
-    hours: "9:00 AM - 6:00 PM",
-    days: "Monday to Saturday",
-    image: "/Images/Branches/guiuan.webp",
   },
   {
     name: "Maasin",

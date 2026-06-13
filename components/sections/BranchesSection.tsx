@@ -15,35 +15,52 @@ export default function BranchesSection() {
           </p>
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {branches.slice(0, 3).map((branch) => (
             <div
               key={branch.name}
-              className="group overflow-hidden rounded-lg bg-surface-container-low shadow-[var(--shadow-floating)]"
+              className="group overflow-hidden rounded-lg border border-outline-variant bg-surface-container-low shadow-[var(--shadow-floating)]"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src={branch.image}
                   alt={branch.name}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                <h3 className="headline-sm absolute bottom-3 left-4 text-white">
-                  {branch.name}
-                </h3>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-3 left-4">
+                  <h2 className="headline-sm text-white">{branch.name}</h2>
+                  <span className="label-sm text-white/70">{branch.days}</span>
+                </div>
               </div>
-              <div className="space-y-2 p-4">
-                <p className="body-md text-on-surface-variant">
-                  {branch.address}
-                </p>
-                <p className="label-md text-primary">{branch.contact}</p>
-                <p className="body-md text-on-surface-variant">
-                  {branch.hours}
-                </p>
-                <p className="label-sm text-on-surface-variant">
-                  {branch.days}
-                </p>
+              <div className="p-5">
+                <div className="flex items-start gap-3">
+                  {/*<svg className="mt-0.5 h-5 w-5 shrink-0 text-on-surface-variant/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>*/}
+                  <p className="body-sm text-on-surface-variant">
+                    {branch.address}
+                  </p>
+                </div>
+
+                <div className="my-4 border-t border-outline-variant/40 pt-4">
+                  <p className="text-[11px] font-medium uppercase tracking-widest text-on-surface-variant/50 mb-1">
+                    Call us
+                  </p>
+                  <p className="text-lg font-bold text-primary tracking-tight">
+                    {branch.contact}
+                  </p>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  {/*<svg className="h-5 w-5 shrink-0 text-on-surface-variant/50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" />
+                  </svg>*/}
+                  <p className="body-sm font-light text-on-surface-variant/60">{branch.hours}</p>
+                </div>
               </div>
             </div>
           ))}

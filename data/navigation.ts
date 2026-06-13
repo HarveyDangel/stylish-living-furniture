@@ -7,12 +7,12 @@ export const navLinks: NavLink[] = [
   { label: "About", href: "/about" },
   { label: "Branches", href: "/branches" },
   { label: "Clients", href: "/clients" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const footerLinks: NavLink[] = [
-  { label: "Collections", href: "/collections" },
-  { label: "Products", href: "/products" },
   { label: "About", href: "/about" },
-  { label: "Journal", href: "/journal" },
+  { label: "Branches", href: "/branches" },
+  { label: "Clients", href: "/clients" },
   { label: "Contact", href: "/contact" },
 ];
