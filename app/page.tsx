@@ -1,12 +1,17 @@
-// import Image from "next/image";
+import HeroSection from "@/components/sections/HeroSection";
+import AboutSection from "@/components/sections/AboutSection";
+import ProductCarousel from "@/components/sections/ProductCarousel";
+import BranchesSection from "@/components/sections/BranchesSection";
+import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
-     <div>
-        <main>
-           {/*<h1 className="display-lg">Stylish Living</h1>
-           <p className="body-lg">Furniture</p>*/}
-        </main>
-     </div>
+    <>
+      <HeroSection />
+      <AboutSection />
+      <ProductCarousel />
+      <BranchesSection />
+      <ContactSection />
+    </>
   );
 }
