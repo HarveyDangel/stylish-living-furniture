@@ -22,7 +22,7 @@ export default function BranchesPage() {
             {branches.map((branch) => (
               <div
                 key={branch.name}
-                className="group overflow-hidden rounded-lg border border-outline-variant bg-surface-container-low shadow-[var(--shadow-floating)]"
+                className="group overflow-hidden rounded-lg border border-outline-variant bg-surface-container-low shadow-md transition-shadow hover:shadow-lg"
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
@@ -32,7 +32,7 @@ export default function BranchesPage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-3 left-4">
                     <h2 className="headline-sm text-white">{branch.name}</h2>
                     <span className="label-sm text-white/70">
