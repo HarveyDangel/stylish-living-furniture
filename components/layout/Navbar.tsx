@@ -1,11 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
-const navLinks = [
-  { label: "About", href: "/about" },
-  { label: "Branches", href: "/branches" },
-  { label: "Clients", href: "/clients" },
-];
+import { navLinks } from "@/data/navigation";
 
 export default function Navbar() {
   return (

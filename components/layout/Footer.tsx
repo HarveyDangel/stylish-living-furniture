@@ -1,13 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-
-const footerLinks = [
-  { label: "Collections", href: "/collections" },
-  { label: "Products", href: "/products" },
-  { label: "About", href: "/about" },
-  { label: "Journal", href: "/journal" },
-  { label: "Contact", href: "/contact" },
-];
+import { footerLinks } from "@/data/navigation";
 
 export default function Footer() {
   return (

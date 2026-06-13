@@ -14,7 +14,7 @@ export default function AboutPage() {
             Our Story
           </h1>
           <p className="body-lg mx-auto mt-4 max-w-2xl text-white/70">
-            A decade of dedication to craftsmanship, community, and timeless design.
+            Decades of dedication to craftsmanship, community, and timeless design.
           </p>
         </div>
       </section>
@@ -27,24 +27,47 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-6 text-on-surface-variant">
               <p className="body-md">
-                Stylish Living Furniture began as a small family workshop in
-                Tacloban City with a simple belief: furniture should be built to
-                last, designed with care, and accessible to every Filipino home.
-                What started as a handful of handcrafted pieces has grown into a
-                trusted name across the Visayas and beyond.
+                Our story begins in 1990. Founded as SL Ruiz Marketing in
+                Tacloban City, we started as a general merchandise shop, a
+                modest venture driven by a simple desire to serve our
+                community. But even then, we saw something others didn&apos;t:
+                furniture had the power to transform not just rooms, but the
+                way people lived and worked.
               </p>
               <p className="body-md">
-                Over the past decade, we have expanded from that single workshop
-                to ten branches spanning from Cebu to Surigao, Legazpi to
-                Borongan. Along the way, we have partnered with local
-                craftsmen, sourced sustainable materials, and stayed true to the
-                principles that define us — quality, integrity, and warmth.
+                That vision led us to specialize. Transitioning from general
+                merchandise to a dedicated furniture retailer and wholesaler,
+                we began curating a thoughtful blend of imported and
+                locally manufactured pieces, ensuring every taste and budget
+                found a home. As word spread, homeowners, private offices, and
+                government agencies alike turned to us for stylish,
+                ergonomic solutions that elevated their spaces.
               </p>
               <p className="body-md">
-                Today, Stylish Living Furniture serves thousands of families,
-                offices, and institutions. Yet we remain, at heart, the same
-                workshop — driven by a passion for craftsmanship and a
-                commitment to making every space feel like home.
+                The trust we earned fueled our growth. Branch by branch, we
+                expanded into neighboring cities and provinces across the
+                region, from Cebu to Surigao, Legazpi to Borongan, bringing
+                quality furniture closer to more Filipino families. Each new
+                location carried the same promise: exceptional products,
+                unparalleled service, and a deep respect for the communities
+                we entered.
+              </p>
+              <p className="body-md">
+                Today, Stylish Living Furniture stands as one of the most
+                trusted furniture destinations in the Visayas and Bicol,
+                serving thousands of homes, offices, and institutions through
+                ten branches. We understand the unique needs of every
+                client, whether furnishing a cozy home, outfitting a
+                government office, or revamping an entire corporate
+                space, and our team of experts is here to guide you every
+                step of the way.
+              </p>
+              <p className="body-md">
+                Now on the path to nationwide expansion, we remain rooted in
+                the same principles that started it all: quality, integrity,
+                and a belief that every space deserves to feel like home.
+                Thank you for being part of our story. Welcome to Stylish
+                Living.
               </p>
             </div>
           </div>
@@ -60,7 +83,7 @@ export default function AboutPage() {
               </div>
               <h3 className="headline-sm text-primary mb-3">Our Mission</h3>
               <p className="body-md text-on-surface-variant">
-                To craft and curate furniture that enriches everyday life —
+                To craft and curate furniture that enriches everyday life,
                 blending timeless design with enduring quality, while
                 supporting local artisans and sustainable practices.
               </p>
@@ -72,7 +95,7 @@ export default function AboutPage() {
               </div>
               <h3 className="headline-sm text-primary mb-3">Our Vision</h3>
               <p className="body-md text-on-surface-variant">
-                To be the most trusted furniture brand in the Philippines —
+                To be the most trusted furniture brand in the Philippines,
                 known not only for the beauty of our products, but for the
                 integrity of our craft and the warmth of our service.
               </p>
