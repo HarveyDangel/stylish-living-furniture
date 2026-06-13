@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Hanken_Grotesk } from "next/font/google";
-import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 
-
 const EB_GaramondSans = EB_Garamond({
-   variable: "--font-eb-garamond-sans",
-   subsets: ["latin"],
-}); 
+  variable: "--font-eb-garamond-sans",
+  subsets: ["latin"],
+});
 
 const Hanken_GroteskMono = Hanken_Grotesk({
-   variable: "--font-hanken-grotesk",
-   subsets: ["latin"],
-}); 
-
+  variable: "--font-hanken-grotesk",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Stylish Living Furniture",
@@ -26,14 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${EB_GaramondSans.variable} ${Hanken_GroteskMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
-        <Navbar />
-        {children}
-      </body>
+    <html lang="en" className={`${EB_GaramondSans.variable} ${Hanken_GroteskMono.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
