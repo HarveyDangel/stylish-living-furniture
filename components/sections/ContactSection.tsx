@@ -88,8 +88,8 @@ export default function ContactSection() {
         </div>
       </div>
 
-      <div className="mt-16">
-        <div className="relative mx-auto max-w-[1280px] overflow-hidden rounded-lg border border-outline-variant px-5 shadow-[var(--shadow-floating)] md:px-16">
+      <div className="mt-16 max-w-7xl mx-auto">
+        <div className="relative mx-auto overflow-hidden rounded-lg border border-outline-variant shadow-[var(--shadow-floating)]">
           <div className="flex items-end justify-end">
             <div className="relative z-10 -mb-1 w-full">
               <div className="pointer-events-none absolute left-0 top-0 z-10 h-32 w-full bg-gradient-to-b from-surface-container to-transparent md:hidden" />
