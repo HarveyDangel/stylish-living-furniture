@@ -11,6 +11,7 @@ export default function AboutSection() {
               src="/Images/about.webp"
               alt="About Stylish Living Furniture"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>

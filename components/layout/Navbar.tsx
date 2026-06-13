@@ -16,6 +16,7 @@ export default function Navbar() {
             src="/Images/Contact/navbar-logo.webp"
             alt="Stylish Living Furniture"
             fill
+            sizes="176px"
             className="object-contain object-left"
           />
         </Link>

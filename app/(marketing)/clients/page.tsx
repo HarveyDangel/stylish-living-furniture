@@ -33,6 +33,7 @@ export default function ClientsPage() {
                         src={`/Images/Clients/${client.file}`}
                         alt={client.name}
                         fill
+                        sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
                         className="object-contain"
                       />
                     </div>
