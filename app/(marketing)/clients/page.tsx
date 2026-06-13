@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { clientGroups } from "@/data/clients";
 import CTASection from "@/components/sections/CTASection";
+import { clientGroups } from "@/data/clients";
 
 export default function ClientsPage() {
   return (
@@ -20,9 +20,7 @@ export default function ClientsPage() {
 
           {clientGroups.map((group) => (
             <div key={group.label} className="mb-16 last:mb-0">
-              <h2 className="headline-md text-primary mb-2">
-                {group.label}
-              </h2>
+              <h2 className="headline-md text-primary mb-2">{group.label}</h2>
               <div className="mb-8 h-px w-full bg-outline-variant" />
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {group.clients.map((client) => (

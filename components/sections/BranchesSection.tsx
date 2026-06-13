@@ -59,7 +59,9 @@ export default function BranchesSection() {
                     <circle cx="12" cy="12" r="10" />
                     <polyline points="12 6 12 12 16 14" />
                   </svg>*/}
-                  <p className="body-sm font-light text-on-surface-variant/60">{branch.hours}</p>
+                  <p className="body-sm font-light text-on-surface-variant/60">
+                    {branch.hours}
+                  </p>
                 </div>
               </div>
             </div>

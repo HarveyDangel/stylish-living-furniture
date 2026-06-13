@@ -11,10 +11,7 @@ export default function Navbar() {
   return (
     <header className="bg-primary">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-16">
-        <Link
-          href="/"
-          className="relative block h-10 w-44 brightness-0 invert"
-        >
+        <Link href="/" className="relative block h-10 w-44 brightness-0 invert">
           <Image
             src="/Images/Contact/navbar-logo.webp"
             alt="Stylish Living Furniture"
@@ -30,7 +27,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`label-md relative text-on-primary no-underline after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:bg-on-primary after:transition-transform after:duration-300 ${
+                  className={`label-md relative text-white no-underline after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:bg-white after:transition-transform after:duration-300 ${
                     isActive
                       ? "after:scale-x-100"
                       : "after:origin-right after:scale-x-0 hover:after:origin-left hover:after:scale-x-100"

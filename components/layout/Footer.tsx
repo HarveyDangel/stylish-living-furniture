@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { footerLinks } from "@/data/navigation";
 
 export default function Footer() {
@@ -22,7 +22,9 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="label-md mb-4 text-inverse-on-surface">Quick Links</h3>
+            <h3 className="label-md mb-4 text-inverse-on-surface">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {footerLinks.map((link) => (
                 <li key={link.href}>

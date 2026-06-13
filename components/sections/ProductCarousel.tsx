@@ -7,9 +7,7 @@ export default function ProductCarousel() {
       <div className="mx-auto max-w-[1280px] px-5 md:px-16">
         <div className="mb-12 flex items-end justify-between">
           <div>
-            <h2 className="headline-md text-primary">
-              Our Collections
-            </h2>
+            <h2 className="headline-md text-primary">Our Collections</h2>
             <p className="body-md text-on-surface-variant mt-2">
               Explore our range of thoughtfully designed furniture.
             </p>

@@ -21,9 +21,9 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-4 text-on-surface-variant">
               <p className="body-md">
-                At Stylish Living Furniture, we believe every piece tells a story.
-                For over a decade, we have been curating and creating furniture
-                that bridges timeless design with modern comfort.
+                At Stylish Living Furniture, we believe every piece tells a
+                story. For over a decade, we have been curating and creating
+                furniture that bridges timeless design with modern comfort.
               </p>
               <p className="body-md">
                 Sourced from master artisans across the Philippines, each item
@@ -46,11 +46,15 @@ export default function AboutSection() {
               </div>
               <div>
                 <p className="headline-sm text-primary">10</p>
-                <p className="label-md text-on-surface-variant mt-1">Branches</p>
+                <p className="label-md text-on-surface-variant mt-1">
+                  Branches
+                </p>
               </div>
               <div>
                 <p className="headline-sm text-primary">100+</p>
-                <p className="label-md text-on-surface-variant mt-1">Happy Clients</p>
+                <p className="label-md text-on-surface-variant mt-1">
+                  Happy Clients
+                </p>
               </div>
             </div>
           </div>

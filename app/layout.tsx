@@ -2,17 +2,15 @@ import type { Metadata } from "next";
 import { EB_Garamond, Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
 
-
 const EB_GaramondSans = EB_Garamond({
-   variable: "--font-eb-garamond-sans",
-   subsets: ["latin"],
-}); 
+  variable: "--font-eb-garamond-sans",
+  subsets: ["latin"],
+});
 
 const Hanken_GroteskMono = Hanken_Grotesk({
-   variable: "--font-hanken-grotesk",
-   subsets: ["latin"],
-}); 
-
+  variable: "--font-hanken-grotesk",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Stylish Living Furniture",

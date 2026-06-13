@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function ContactPage() {
   return (
     <>
@@ -29,7 +27,10 @@ export default function ContactPage() {
               </h2>
               <form className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="label-md mb-1 block text-on-surface">
+                  <label
+                    htmlFor="name"
+                    className="label-md mb-1 block text-on-surface"
+                  >
                     Name
                   </label>
                   <input
@@ -40,7 +41,10 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="label-md mb-1 block text-on-surface">
+                  <label
+                    htmlFor="email"
+                    className="label-md mb-1 block text-on-surface"
+                  >
                     Email
                   </label>
                   <input
@@ -51,7 +55,10 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="label-md mb-1 block text-on-surface">
+                  <label
+                    htmlFor="message"
+                    className="label-md mb-1 block text-on-surface"
+                  >
                     Message
                   </label>
                   <textarea
@@ -124,7 +131,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
     </>
   );
 }
