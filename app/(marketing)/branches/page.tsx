@@ -42,18 +42,6 @@ export default function BranchesPage() {
                 </div>
                 <div className="p-5">
                   <div className="flex items-start gap-3">
-                    <svg
-                      className="mt-0.5 h-5 w-5 shrink-0 text-on-surface-variant/50"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
                     <p className="body-sm text-on-surface-variant">
                       {branch.address}
                     </p>
@@ -69,18 +57,6 @@ export default function BranchesPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <svg
-                      className="h-5 w-5 shrink-0 text-on-surface-variant/50"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <polyline points="12 6 12 12 16 14" />
-                    </svg>
                     <p className="body-sm font-light text-on-surface-variant/60">
                       {branch.hours}
                     </p>
