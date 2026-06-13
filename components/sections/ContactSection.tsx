@@ -88,24 +88,19 @@ export default function ContactSection() {
         </div>
       </div>
 
-      <div className="mt-16 max-w-7xl mx-auto">
-        <div className="relative mx-auto overflow-hidden rounded-lg border border-outline-variant shadow-[var(--shadow-floating)]">
-          <div className="flex items-end justify-end">
-            <div className="relative z-10 -mb-1 w-full">
-              <div className="pointer-events-none absolute left-0 top-0 z-10 h-32 w-full bg-gradient-to-b from-surface-container to-transparent md:hidden" />
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d124.9935731!3d11.2162609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x330876e21e31dd59%3A0xbe4ad3d13fe599d7!2sSTYLISH%20LIVING%20FURNITURE!5e0!3m2!1sen!2sph!4v1"
-                width="100%"
-                height="380"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Tacloban Main Branch Location"
-                className="rounded-lg"
-              />
-            </div>
-          </div>
+      <div className="mx-auto mt-16 max-w-[1280px] px-5 md:px-16">
+        <div className="overflow-hidden rounded-lg border border-outline-variant shadow-[var(--shadow-floating)]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d124.9935731!3d11.2162609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x330876e21e31dd59%3A0xbe4ad3d13fe599d7!2sSTYLISH%20LIVING%20FURNITURE!5e0!3m2!1sen!2sph!4v1"
+            width="100%"
+            height="380"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Tacloban Main Branch Location"
+            className="rounded-lg"
+          />
         </div>
       </div>
     </section>
