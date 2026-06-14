@@ -16,13 +16,13 @@ export default function CTASection({
   return (
     <section className="bg-primary py-24 md:py-32">
       <div className="mx-auto max-w-[1280px] px-5 text-center md:px-16">
-        <h2 className="headline-md text-white mb-4">{title}</h2>
-        <p className="body-lg text-white/80 mx-auto mb-8 max-w-xl">
+        <h2 className="headline-md mb-4 text-white">{title}</h2>
+        <p className="body-lg mx-auto mb-8 max-w-xl text-white/80">
           {description}
         </p>
         <Link
           href={buttonHref}
-          className="inline-block rounded bg-secondary-container px-10 py-3 text-sm font-semibold uppercase tracking-[0.05em] text-black no-underline transition-all hover:brightness-110"
+          className="inline-block rounded bg-secondary-container px-10 py-3 font-semibold text-black text-sm uppercase tracking-[0.05em] no-underline transition-all hover:brightness-110"
         >
           {buttonText}
         </Link>

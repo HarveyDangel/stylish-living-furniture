@@ -3,7 +3,7 @@ export default function ContactPage() {
     <>
       <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-center bg-cover"
           style={{ backgroundImage: "url(/Images/hero.webp)" }}
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -22,7 +22,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-[1280px] px-5 md:px-16">
           <div className="grid gap-12 md:grid-cols-2">
             <div>
-              <h2 className="headline-md text-primary mb-6">
+              <h2 className="headline-md mb-6 text-primary">
                 Send Us a Message
               </h2>
               <form className="space-y-6">
@@ -70,7 +70,7 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="rounded bg-secondary-container px-10 py-3 text-sm font-semibold uppercase tracking-[0.05em] text-black transition-all hover:brightness-110"
+                  className="rounded bg-secondary-container px-10 py-3 font-semibold text-black text-sm uppercase tracking-[0.05em] transition-all hover:brightness-110"
                 >
                   Send Message
                 </button>

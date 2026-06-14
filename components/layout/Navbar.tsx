@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { navLinkVariants } from "@/components/ui/button";
 import { navLinks } from "@/data/navigation";
 
 export default function Navbar() {
@@ -28,11 +29,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className={`label-md relative text-white no-underline after:absolute after:bottom-0 after:left-0 after:h-px after:w-full after:bg-white after:transition-transform after:duration-300 ${
-                    isActive
-                      ? "after:scale-x-100"
-                      : "after:origin-right after:scale-x-0 hover:after:origin-left hover:after:scale-x-100"
-                  }`}
+                  className={navLinkVariants({ active: isActive })}
                 >
                   {link.label}
                 </Link>
