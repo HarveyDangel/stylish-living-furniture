@@ -17,6 +17,7 @@ export default function Navbar() {
             src="/Images/Contact/navbar-logo.webp"
             alt="Stylish Living Furniture"
             fill
+            sizes="176px"
             className="object-contain object-left"
           />
         </Link>
@@ -24,7 +25,6 @@ export default function Navbar() {
         <ul className="flex items-center gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
-
             return (
               <li key={link.href}>
                 <Link

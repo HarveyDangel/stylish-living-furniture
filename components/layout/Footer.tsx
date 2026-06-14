@@ -13,6 +13,7 @@ export default function Footer() {
                 src="/Images/Contact/footer-logo.webp"
                 alt="Stylish Living Furniture"
                 fill
+                sizes="192px"
                 className="object-contain object-left"
               />
             </div>

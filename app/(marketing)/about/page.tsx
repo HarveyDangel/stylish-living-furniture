@@ -1,4 +1,4 @@
-import CTASection from "@/components/sections/CTASection";
+import { CTA } from "@/components/sections/cta";
 
 export default function AboutPage() {
   return (
@@ -10,10 +10,10 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 mx-auto max-w-[1280px] px-5 text-center md:px-16">
-          <h1 className="display-lg-mobile md:display-lg text-white">
+          <h1 className="display-lg-mobile md:display-lg text-white font-sans text-6xl">
             Our Story
           </h1>
-          <p className="body-lg mx-auto mt-4 max-w-2xl text-white/70">
+          <p className="body-lg mx-auto mt-4 max-w-2xl text-white/70 text-xl">
             Decades of dedication to craftsmanship, community, and timeless
             design.
           </p>
@@ -21,13 +21,13 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-surface py-24 md:py-32">
-        <div className="mx-auto max-w-[1280px] px-5 md:px-16">
+        <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="mx-auto max-w-3xl">
-            <h2 className="headline-md mb-8 text-center text-primary">
+            <h2 className="text-4xl font-sans mb-8 text-center text-primary">
               Our History
             </h2>
-            <div className="space-y-6 text-on-surface-variant">
-              <p className="body-md">
+            <div className="space-y-6 text-on-surface-variant leading-relaxed">
+              <p>
                 Our story begins in 1990. Founded as SL Ruiz Marketing in
                 Tacloban City, we started as a general merchandise shop, a
                 modest venture driven by a simple desire to serve our community.
@@ -35,7 +35,7 @@ export default function AboutPage() {
                 had the power to transform not just rooms, but the way people
                 lived and worked.
               </p>
-              <p className="body-md">
+              <p>
                 That vision led us to specialize. Transitioning from general
                 merchandise to a dedicated furniture retailer and wholesaler, we
                 began curating a thoughtful blend of imported and locally
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 government agencies alike turned to us for stylish, ergonomic
                 solutions that elevated their spaces.
               </p>
-              <p className="body-md">
+              <p>
                 The trust we earned fueled our growth. Branch by branch, we
                 expanded into neighboring cities and provinces across the
                 region, from Cebu to Surigao, Legazpi to Borongan, bringing
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 unparalleled service, and a deep respect for the communities we
                 entered.
               </p>
-              <p className="body-md">
+              <p>
                 Today, Stylish Living Furniture stands as one of the most
                 trusted furniture destinations in the Visayas and Bicol, serving
                 thousands of homes, offices, and institutions through ten
@@ -62,7 +62,7 @@ export default function AboutPage() {
                 or revamping an entire corporate space, and our team of experts
                 is here to guide you every step of the way.
               </p>
-              <p className="body-md">
+              <p>
                 Now on the path to nationwide expansion, we remain rooted in the
                 same principles that started it all: quality, integrity, and a
                 belief that every space deserves to feel like home. Thank you
@@ -73,45 +73,46 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-surface-container py-24 md:py-32">
-        <div className="mx-auto max-w-[1280px] px-5 md:px-16">
-          <div className="grid gap-12 md:grid-cols-3">
-            <div className="rounded-lg bg-surface p-8 shadow-[var(--shadow-floating)]">
+      <section className="bg-gray-200 py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-5 md:px-16">
+          <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-3">
+            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
-                <span className="headline-sm text-on-primary-container">
+                <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
                   01
                 </span>
               </div>
-              <h3 className="headline-sm mb-3 text-primary">Our Mission</h3>
-              <p className="body-md text-on-surface-variant">
+              <h3 className="text-lg font-semibold mb-3 text-primary">Our Mission</h3>
+              
+              <p className="body-md text-on-surface-variant leading-relaxed">
                 To craft and curate furniture that enriches everyday life,
                 blending timeless design with enduring quality, while supporting
                 local artisans and sustainable practices.
               </p>
             </div>
 
-            <div className="rounded-lg bg-surface p-8 shadow-[var(--shadow-floating)]">
+            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
-                <span className="headline-sm text-on-primary-container">
+                <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
                   02
                 </span>
               </div>
-              <h3 className="headline-sm mb-3 text-primary">Our Vision</h3>
-              <p className="body-md text-on-surface-variant">
+              <h3 className="text-lg font-semibold mb-3 text-primary">Our Vision</h3>
+              <p className="body-md text-on-surface-variant leading-relaxed">
                 To be the most trusted furniture brand in the Philippines, known
                 not only for the beauty of our products, but for the integrity
                 of our craft and the warmth of our service.
               </p>
             </div>
 
-            <div className="rounded-lg bg-surface p-8 shadow-[var(--shadow-floating)]">
+            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
-                <span className="headline-sm text-on-primary-container">
+                <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
                   03
                 </span>
               </div>
-              <h3 className="headline-sm mb-3 text-primary">Our Goals</h3>
-              <p className="body-md text-on-surface-variant">
+              <h3 className="text-lg font-semibold mb-3 text-primary">Our Goals</h3>
+              <p className="body-md text-on-surface-variant leading-relaxed">
                 Expand our reach to every province in the region, deepen our
                 commitment to eco-friendly materials, and continue building a
                 legacy of Filipino craftsmanship for generations to come.
@@ -122,20 +123,20 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-surface py-24 md:py-32">
-        <div className="mx-auto max-w-[1280px] px-5 md:px-16">
-          <h2 className="headline-md mb-12 text-center text-primary">
+        <div className="mx-auto max-w-7xl px-5 md:px-16">
+          <h2 className="text-4xl font-sans mb-12 text-center text-primary">
             Our Values
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((value) => (
               <div
                 key={value.title}
-                className="rounded-lg border border-primary-container bg-surface p-8 text-center shadow-[var(--shadow-floating)]"
+                className="rounded-lg border border-primary-container bg-surface p-8 text-center"
               >
                 <div className="mb-4 flex items-center justify-center text-primary">
                   {value.icon}
                 </div>
-                <h3 className="label-md mb-2 text-primary">{value.title}</h3>
+                <h3 className="text-md font-semibold mb-2 text-primary">{value.title}</h3>
                 <p className="body-md text-on-surface-variant">
                   {value.description}
                 </p>
@@ -145,7 +146,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTASection
+      <CTA
         title="Be Part of Our Story"
         description="For over three decades, we have been furnishing homes and offices across the Visayas. Let us help write the next chapter is yours."
         buttonText="Start Your Journey"
