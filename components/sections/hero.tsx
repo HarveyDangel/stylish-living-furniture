@@ -22,7 +22,7 @@ export function Hero() {
           href="/products"
           className={cn(
             buttonVariants({ variant: "secondary", size: "xl" }),
-            "px-12",
+            "px-12 uppercase tracking-wide",
           )}
         >
           Explore Collection
