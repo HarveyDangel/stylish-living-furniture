@@ -1,4 +1,4 @@
-import CTASection from "@/components/sections/CTASection";
+import { CTA } from "@/components/sections/cta";
 
 export default function AboutPage() {
   return (
@@ -10,10 +10,10 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 mx-auto max-w-[1280px] px-5 text-center md:px-16">
-          <h1 className="display-lg-mobile md:display-lg text-white">
+          <h1 className="display-lg-mobile md:display-lg text-white font-sans text-6xl">
             Our Story
           </h1>
-          <p className="body-lg mx-auto mt-4 max-w-2xl text-white/70">
+          <p className="body-lg mx-auto mt-4 max-w-2xl text-white/70 text-xl">
             Decades of dedication to craftsmanship, community, and timeless
             design.
           </p>
@@ -23,11 +23,11 @@ export default function AboutPage() {
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-[1280px] px-5 md:px-16">
           <div className="mx-auto max-w-3xl">
-            <h2 className="headline-md mb-8 text-center text-primary">
+            <h2 className="headline-md mb-8 text-center text-primary font-sans text-4xl">
               Our History
             </h2>
-            <div className="space-y-6 text-on-surface-variant">
-              <p className="body-md">
+            <div className="space-y-6 text-on-surface-variant leading-relaxed">
+              <p className="">
                 Our story begins in 1990. Founded as SL Ruiz Marketing in
                 Tacloban City, we started as a general merchandise shop, a
                 modest venture driven by a simple desire to serve our community.
@@ -145,7 +145,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <CTASection
+      <CTA
         title="Be Part of Our Story"
         description="For over three decades, we have been furnishing homes and offices across the Visayas. Let us help write the next chapter is yours."
         buttonText="Start Your Journey"
