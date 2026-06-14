@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import CTASection from "@/components/sections/CTASection";
+import { CTA } from "@/components/sections/cta";
 import { branches } from "@/data/branches";
 
 export default function BranchesPage() {
@@ -9,10 +9,10 @@ export default function BranchesPage() {
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="mx-auto mb-16 max-w-2xl text-center">
-            <h1 className="display-lg-mobile md:display-lg mb-4 text-primary">
+            <h1 className=" md:display-lg mb-4 text-primary font-sans text-6xl">
               Our Branches
             </h1>
-            <p className="body-lg text-on-surface-variant">
+            <p className="text-lg text-on-surface-variant">
               With ten branches across the Visayas and Bicol, we are always
               within reach. Visit the branch nearest you.
             </p>
@@ -41,25 +41,13 @@ export default function BranchesPage() {
                 </div>
                 <div className="p-5">
                   <div className="flex items-start gap-3">
-                    <svg
-                      className="mt-0.5 h-5 w-5 shrink-0 text-on-surface-variant/50"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
                     <p className="body-sm text-on-surface-variant">
                       {branch.address}
                     </p>
                   </div>
 
                   <div className="my-4 border-outline-variant/40 border-t pt-4">
-                    <p className="mb-1 font-medium text-[11px] text-on-surface-variant/50 uppercase tracking-widest">
+                    <p className="mb-1 font-medium text-[11px] text-gray-600 uppercase tracking-widest">
                       Call us
                     </p>
                     <p className="font-bold text-lg text-primary tracking-tight">
@@ -68,18 +56,6 @@ export default function BranchesPage() {
                   </div>
 
                   <div className="flex items-center gap-3">
-                    <svg
-                      className="h-5 w-5 shrink-0 text-on-surface-variant/50"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <polyline points="12 6 12 12 16 14" />
-                    </svg>
                     <p className="body-sm font-light text-on-surface-variant/60">
                       {branch.hours}
                     </p>
@@ -110,7 +86,7 @@ export default function BranchesPage() {
         </div>
       </section>
 
-      <CTASection
+      <CTA
         title="Visit Our Showroom"
         description="Can&apos;t make it to a branch? Get in touch with us online and we will help you find the perfect furniture from the comfort of your home."
         buttonText="Contact Us"
