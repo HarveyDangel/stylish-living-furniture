@@ -75,8 +75,8 @@ export default function AboutPage() {
 
       <section className="bg-gray-200 py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
-          <div className="grid gap-12 md:grid-cols-3">
-            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container">
+          <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-3">
+            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
                 <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
                   01
@@ -91,7 +91,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container">
+            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
                 <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
                   02
@@ -105,7 +105,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container">
+            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
                 <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
                   03
