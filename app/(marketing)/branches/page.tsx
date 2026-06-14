@@ -9,7 +9,7 @@ export default function BranchesPage() {
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="mx-auto mb-16 max-w-2xl text-center">
-            <h1 className="display-lg-mobile md:display-lg text-primary mb-4">
+            <h1 className="display-lg-mobile md:display-lg mb-4 text-primary">
               Our Branches
             </h1>
             <p className="body-lg text-on-surface-variant">
@@ -58,11 +58,11 @@ export default function BranchesPage() {
                     </p>
                   </div>
 
-                  <div className="my-4 border-t border-outline-variant/40 pt-4">
-                    <p className="text-[11px] font-medium uppercase tracking-widest text-on-surface-variant/50 mb-1">
+                  <div className="my-4 border-outline-variant/40 border-t pt-4">
+                    <p className="mb-1 font-medium text-[11px] text-on-surface-variant/50 uppercase tracking-widest">
                       Call us
                     </p>
-                    <p className="text-lg font-bold text-primary tracking-tight">
+                    <p className="font-bold text-lg text-primary tracking-tight">
                       {branch.contact}
                     </p>
                   </div>

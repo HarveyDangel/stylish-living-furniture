@@ -5,7 +5,7 @@ export default function AboutPage() {
     <>
       <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-center bg-cover"
           style={{ backgroundImage: "url(/Images/about.webp)" }}
         />
         <div className="absolute inset-0 bg-black/50" />
@@ -23,7 +23,7 @@ export default function AboutPage() {
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-[1280px] px-5 md:px-16">
           <div className="mx-auto max-w-3xl">
-            <h2 className="headline-md text-primary mb-8 text-center">
+            <h2 className="headline-md mb-8 text-center text-primary">
               Our History
             </h2>
             <div className="space-y-6 text-on-surface-variant">
@@ -82,7 +82,7 @@ export default function AboutPage() {
                   01
                 </span>
               </div>
-              <h3 className="headline-sm text-primary mb-3">Our Mission</h3>
+              <h3 className="headline-sm mb-3 text-primary">Our Mission</h3>
               <p className="body-md text-on-surface-variant">
                 To craft and curate furniture that enriches everyday life,
                 blending timeless design with enduring quality, while supporting
@@ -96,7 +96,7 @@ export default function AboutPage() {
                   02
                 </span>
               </div>
-              <h3 className="headline-sm text-primary mb-3">Our Vision</h3>
+              <h3 className="headline-sm mb-3 text-primary">Our Vision</h3>
               <p className="body-md text-on-surface-variant">
                 To be the most trusted furniture brand in the Philippines, known
                 not only for the beauty of our products, but for the integrity
@@ -110,7 +110,7 @@ export default function AboutPage() {
                   03
                 </span>
               </div>
-              <h3 className="headline-sm text-primary mb-3">Our Goals</h3>
+              <h3 className="headline-sm mb-3 text-primary">Our Goals</h3>
               <p className="body-md text-on-surface-variant">
                 Expand our reach to every province in the region, deepen our
                 commitment to eco-friendly materials, and continue building a
@@ -123,7 +123,7 @@ export default function AboutPage() {
 
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-[1280px] px-5 md:px-16">
-          <h2 className="headline-md text-primary mb-12 text-center">
+          <h2 className="headline-md mb-12 text-center text-primary">
             Our Values
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -135,7 +135,7 @@ export default function AboutPage() {
                 <div className="mb-4 flex items-center justify-center text-primary">
                   {value.icon}
                 </div>
-                <h3 className="label-md text-primary mb-2">{value.title}</h3>
+                <h3 className="label-md mb-2 text-primary">{value.title}</h3>
                 <p className="body-md text-on-surface-variant">
                   {value.description}
                 </p>

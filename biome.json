@@ -1,41 +1,47 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
-  "linter": {
+  "vcs": {
     "enabled": true,
-    "rules": {
-      "preset": "recommended",
-      "correctness": {
-        "noUnusedVariables": "error"
-      },
-      "style": {
-        "noNonNullAssertion": "off"
-      },
-      "a11y": {
-        "noSvgWithoutTitle": "off"
-      }
-    }
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**", "!node_modules", "!.next", "!dist", "!build"]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
     "indentWidth": 2,
-    "lineWidth": 80
+    "lineEnding": "lf"
   },
-  "css": {
-    "parser": {
-      "tailwindDirectives": true
-    }
-  },
-  "javascript": {
-    "formatter": {
-      "quoteStyle": "double",
-      "semicolons": "always",
-      "trailingCommas": "all"
-    }
-  },
-  "vcs": {
+  "linter": {
     "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
+    "rules": {
+      "preset": "recommended",
+      "suspicious": {
+        "noUnknownAtRules": "off"
+      },
+      "nursery": {
+        "useSortedClasses": {
+          "level": "warn",
+          "fix": "safe",
+          "options": {
+            "functions": ["cn", "cva"]
+          }
+        }
+      }
+    },
+    "domains": {
+      "next": "recommended",
+      "react": "recommended"
+    }
+  },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   }
 }
