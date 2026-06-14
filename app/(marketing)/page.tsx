@@ -1,17 +1,17 @@
-import HeroSection from "@/components/sections/HeroSection";
-import AboutSection from "@/components/sections/AboutSection";
-import ProductCarousel from "@/components/sections/ProductCarousel";
-import BranchesSection from "@/components/sections/BranchesSection";
-import ContactSection from "@/components/sections/ContactSection";
+import { About } from "@/components/sections/about";
+import { Branches } from "@/components/sections/branches";
+import { CTA } from "@/components/sections/cta";
+import { Hero } from "@/components/sections/hero";
+import { ProductCarousel } from "@/components/sections/product-carousel";
 
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <AboutSection />
+      <Hero />
+      <About />
       <ProductCarousel />
-      <BranchesSection />
-      <ContactSection />
+      <Branches />
+      <CTA />
     </>
   );
 }

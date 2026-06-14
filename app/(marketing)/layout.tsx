@@ -1,5 +1,6 @@
-import Navbar from "@/components/layout/Navbar";
+//TODO: bat error ka boy?
 import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 
 export default function MarketingLayout({
   children,
@@ -9,7 +10,7 @@ export default function MarketingLayout({
   return (
     <>
       <Navbar />
-      <main className="flex-1">{children}</main>
+      <main className="flex flex-1 flex-col">{children}</main>
       <Footer />
     </>
   );

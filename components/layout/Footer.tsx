@@ -1,35 +1,28 @@
-import Link from "next/link";
 import Image from "next/image";
-
-const footerLinks = [
-  { label: "Collections", href: "/collections" },
-  { label: "Products", href: "/products" },
-  { label: "About", href: "/about" },
-  { label: "Journal", href: "/journal" },
-  { label: "Contact", href: "/contact" },
-];
+import Link from "next/link";
+import { footerLinks } from "@/data/navigation";
 
 export default function Footer() {
   return (
-    <footer className="bg-inverse-surface mt-auto">
-      <div className="mx-auto max-w-[1280px] px-5 py-16 md:px-16">
+    <footer className="mt-auto bg-background-footer text-primary-foreground">
+      <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="relative mb-4 h-12 w-48">
               <Image
-                src="/Images/Contact/footer-logo.png"
+                src="/Images/Contact/footer-logo.webp"
                 alt="Stylish Living Furniture"
                 fill
                 className="object-contain object-left"
               />
             </div>
-            <p className="body-md text-inverse-on-surface/70 max-w-xs">
+            <p className="max-w-xs">
               Curated furniture for slow living and timeless spaces.
             </p>
           </div>
 
           <div>
-            <h3 className="label-md mb-4 text-inverse-on-surface">Quick Links</h3>
+            <h3 className="mb-4 font-semibold text-sm">Quick Links</h3>
             <ul className="space-y-3">
               {footerLinks.map((link) => (
                 <li key={link.href}>
@@ -45,8 +38,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="label-md mb-4 text-inverse-on-surface">Contact</h3>
-            <ul className="space-y-3 text-inverse-on-surface/60">
+            <h3 className="mb-4 font-semibold text-sm">Contact</h3>
+            <ul className="space-y-3">
               <li className="body-md">
                 Brgy. 95 Caibaan, Maharlika Hwy
                 <br />
@@ -58,8 +51,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-inverse-on-surface/10 pt-8 text-center">
-          <p className="body-md text-inverse-on-surface/40">
+        <div className="mt-12 border-t pt-8 text-center">
+          <p className="text-inverse-on-surface/40">
             &copy; {new Date().getFullYear()} Stylish Living Furniture. All
             rights reserved.
           </p>
