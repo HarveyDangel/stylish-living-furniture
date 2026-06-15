@@ -28,7 +28,7 @@ export function CTA( {
 					href={buttonHref}
 					className={cn(
 						buttonVariants({ variant: "secondary", size: "xl" }),
-						"px-12"
+						"px-12 uppercase tracking-wide"
 					)}
 				>
 					{buttonText}
