@@ -8,7 +8,7 @@ export default function ClientsPage() {
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="mx-auto mb-16 max-w-2xl text-center">
-            <h1 className=" md:display-lg mb-4 text-primary font-sans text-6xl">
+            <h1 className="md:display-lg mb-4 font-sans text-6xl text-primary">
               Our Clients
             </h1>
             <p className="text-lg text-on-surface-variant">
@@ -20,8 +20,10 @@ export default function ClientsPage() {
 
           {clientGroups.map((group) => (
             <div key={group.label} className="mb-16 last:mb-0">
-              <h2 className="font-sans text-4xl mb-2 text-primary">{group.label}</h2>
-              <div className="mb-8 h-px w-full bg-outline-variant border-t-2 border-primary/60" />
+              <h2 className="mb-2 font-sans text-4xl text-primary">
+                {group.label}
+              </h2>
+              <div className="mb-8 h-px w-full border-primary/60 border-t-2 bg-outline-variant" />
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {group.clients.map((client) => (
                   <div
