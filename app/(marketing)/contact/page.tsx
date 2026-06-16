@@ -1,126 +1,69 @@
+import Link from "next/link";
+import { ContactForm } from "@/components/contact-form";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 
 export default function ContactPage() {
-	return (
-		<>
-			<section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
-				<div
-					className="absolute inset-0 bg-center bg-cover"
-					style={{ backgroundImage: "url(/Images/hero.webp)" }}
-				/>
-				<div className="absolute inset-0 bg-black/50" />
-				<div className="relative z-10 mx-auto max-w-7xl px-5 text-center md:px-16">
-					<h1 className=" md:display-lg text-white font-sans text-6xl">
-						Contact Us
-					</h1>
-					<p className="text-lg mx-auto mt-4 max-w-2xl text-white/70">
-						We would love to hear from you. Reach out to us for inquiries,
-						custom orders, or just to say hello.
-					</p>
-				</div>
-			</section>
+  return (
+    <>
+      <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
+        <div
+          className="absolute inset-0 bg-center bg-cover"
+          style={{ backgroundImage: "url(/Images/hero.webp)" }}
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative z-10 mx-auto max-w-7xl px-5 text-center md:px-16">
+          <h1 className="md:display-lg font-sans text-6xl text-white">
+            Contact Us
+          </h1>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/70">
+            We would love to hear from you. Reach out to us for inquiries,
+            custom orders, or just to say hello.
+          </p>
+        </div>
+      </section>
 
-			<section className="bg-surface py-24 md:py-32">
-				<div className="mx-auto max-w-7xl px-5 md:px-16">
-					<div className="grid gap-12 md:grid-cols-2">
-						<div>
-							<h2 className="text-xl mb-6 text-primary">Send Us a Message</h2>
-							<form className="space-y-6">
-								<div>
-									<label
-										htmlFor="name"
-										className="label-md mb-1 block text-on-surface"
-									>
-										Name
-									</label>
-									<input
-										type="text"
-										id="name"
-										className="w-full rounded border border-outline-variant bg-surface px-4 py-3 text-on-surface outline-none transition-colors placeholder:text-outline focus:border-primary"
-										placeholder="Your name"
-									/>
-								</div>
-								<div>
-									<label
-										htmlFor="email"
-										className="label-md mb-1 block text-on-surface"
-									>
-										Email
-									</label>
-									<input
-										type="email"
-										id="email"
-										className="w-full rounded border border-outline-variant bg-surface px-4 py-3 text-on-surface outline-none transition-colors placeholder:text-outline focus:border-primary"
-										placeholder="your@email.com"
-									/>
-								</div>
-								<div>
-									<label
-										htmlFor="message"
-										className="label-md mb-1 block text-on-surface"
-									>
-										Message
-									</label>
-									<textarea
-										id="message"
-										rows={5}
-										className="w-full resize-none rounded border border-outline-variant bg-surface px-4 py-3 text-on-surface outline-none transition-colors placeholder:text-outline focus:border-primary"
-										placeholder="Tell us what you need..."
-									/>
-								</div>
-								{/* <button
-                  type="submit"
-                  className="rounded bg-secondary-container px-10 py-3 font-semibold text-black text-sm uppercase tracking-[0.05em] transition-all hover:brightness-110"
-                >
-                  Send Message
-                </button> */}
-								<Link
-									href="/contact"
-									className={cn(
-										buttonVariants({ variant: "secondary", size: "xl" }),
-										"px-12 tracking-wide"
-									)}
-								>
-									Send Message
-								</Link>
-							</form>
-						</div>
+      <section className="bg-surface py-24 md:py-32">
+        <div className="mx-auto max-w-[1280px] px-5 md:px-16">
+          <div className="grid gap-12 md:grid-cols-2">
+            <div>
+              <h2 className="mb-6 text-primary text-xl">Send Us a Message</h2>
+              <ContactForm />
+            </div>
 
-						<div className="space-y-8">
-							<div>
-								<h3 className="text-xl mb-2 text-primary">Visit Us</h3>
-								<p className="body-md text-on-surface-variant">
-									Brgy. 95 Caibaan, Maharlika Highway
-									<br />
-									Tacloban City, Philippines
-								</p>
-							</div>
-							<div>
-								<h3 className="label-md mb-2 text-primary">Call Us</h3>
-								<p className="body-md text-on-surface-variant">
-									(+63) 917 145 3352
-								</p>
-							</div>
-							<div>
-								<h3 className="label-md mb-2 text-primary">Email Us</h3>
-								<p className="body-md text-on-surface-variant">
-									hello@stylishlivingfurniture.com
-								</p>
-							</div>
-							<div>
-								<h3 className="label-md mb-2 text-primary">Store Hours</h3>
-								<p className="body-md text-on-surface-variant">
-									Monday - Saturday
-									<br />
-									8:00 AM - 6:00 PM
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div className="space-y-8">
+              <div>
+                <h3 className="mb-2 text-primary text-xl">Visit Us</h3>
+                <p className="body-md text-on-surface-variant">
+                  Brgy. 95 Caibaan, Maharlika Highway
+                  <br />
+                  Tacloban City, Philippines
+                </p>
+              </div>
+              <div>
+                <h3 className="label-md mb-2 text-primary">Call Us</h3>
+                <p className="body-md text-on-surface-variant">
+                  (+63) 917 145 3352
+                </p>
+              </div>
+              <div>
+                <h3 className="label-md mb-2 text-primary">Email Us</h3>
+                <p className="body-md text-on-surface-variant">
+                  hello@stylishlivingfurniture.com
+                </p>
+              </div>
+              <div>
+                <h3 className="label-md mb-2 text-primary">Store Hours</h3>
+                <p className="body-md text-on-surface-variant">
+                  Monday - Saturday
+                  <br />
+                  8:00 AM - 6:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 			<section className="bg-surface-container py-24 md:py-32">
 				<div className="mx-auto max-w-7xl px-5 md:px-16">
