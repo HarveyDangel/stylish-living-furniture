@@ -24,7 +24,7 @@ export default function ContactPage() {
       </section>
 
       <section className="bg-surface py-24 md:py-32">
-        <div className="mx-auto max-w-[1280px] px-5 md:px-16">
+        <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="grid gap-12 md:grid-cols-2">
             <div>
               <h2 className="mb-6 text-primary text-xl">Send Us a Message</h2>
