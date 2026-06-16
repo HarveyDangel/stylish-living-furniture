@@ -18,7 +18,7 @@ export function CTA( {
 	return (
 		<section className="bg-primary py-24 md:py-32">
 			<div className="mx-auto max-w-7xl px-5 text-center md:px-16">
-				<h2 className="mb-4 font-medium font-sans text-3xl text-primary-foreground">
+				<h2 className="mb-4 font-medium font-sans text-3xl text-primary-foreground tracking-wide">
 					{title}
 				</h2>
 				<p className="body-lg mx-auto mb-8 max-w-xl text-white/80">

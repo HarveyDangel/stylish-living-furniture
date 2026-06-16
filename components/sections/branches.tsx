@@ -11,7 +11,7 @@ export function Branches() {
     <section className="py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 text-center">
-          <h2 className="font-medium text-3xl text-primary">Our Branches</h2>
+          <h2 className="font-sans text-4xl text-primary">Our Branches</h2>
           <p className="mt-2">Find a branch near you.</p>
         </div>
 
@@ -30,7 +30,7 @@ export function Branches() {
                 />
                 <div className="absolute inset-0 bg-linear-to- from-black/50 to-transparent" />
                 <div className="absolute bottom-3 left-4">
-                  <h2 className="font-medium text-2xl text-primary-foreground">
+                  <h2 className="font-sans text-2xl text-primary-foreground">
                     {branch.name}
                   </h2>
                   <span className="font-medium text-primary-foreground/80 text-xs">
