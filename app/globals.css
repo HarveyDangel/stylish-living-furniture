@@ -157,4 +157,8 @@
     scrollbar-gutter: stable;
     @apply font-mono;
   }
+
+  [data-sonner-toast] {
+    @apply font-mono;
+  }
 }

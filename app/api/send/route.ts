@@ -1,13 +1,12 @@
-// import { ipAddress } from "@vercel/functions";
+import { ipAddress } from "@vercel/functions";
 import { Resend } from "resend";
 import * as v from "valibot";
-// import { ContactFormEmail } from "@/components/emails/contact-form";
-// import { getEnv } from "@/lib/env";
-// import { ratelimit } from "@/lib/rate-limit";
+import { ratelimit } from "@/lib/rate-limit";
 import { contactFormSchema } from "@/lib/validations/contact-form";
-import { ContactFormEmail } from "@/components/contact-form-email-template";
+import { serverEnv } from "@/env";
+import { ContactFormEmail } from "@/components/emails/contact-form";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(serverEnv.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -33,19 +32,24 @@ export async function POST(req: Request) {
     }
 
     // Rate limit
-    // const ip = ipAddress(req) ?? "127.0.0.1";
-    // const { success } = await ratelimit.limit(ip);
+    const ip = ipAddress(req);
 
-    // if (!success) {
-    //   return Response.json(
-    //     {
-    //       error: "Too many requests. Try again later.",
-    //     },
-    //     {
-    //       status: 429,
-    //     },
-    //   );
-    // }
+    if (!ip && serverEnv.NODE_ENV === "production") {
+      console.warn("Could not determine IP for rate limiting");
+    }
+
+    const { success } = await ratelimit.limit(ip ?? "127.0.0.1");
+
+    if (!success) {
+      return Response.json(
+        {
+          error: "Too many requests. Try again later.",
+        },
+        {
+          status: 429,
+        },
+      );
+    }
 
     // Validate
     const parsed = v.safeParse(contactFormSchema, body);
@@ -61,13 +65,15 @@ export async function POST(req: Request) {
       );
     }
 
+    const { name, email, message } = parsed.output;
+
     // Send
     const { data, error } = await resend.emails.send({
-      from: "Stylish Living Furniture <onboarding@resend.dev>",
-      to: ["harveydangel@gmail.com"],
-      replyTo: ["harveydangel@gmail.com"],
-      subject: `New message from ${body.name}`,
-      react: ContactFormEmail({ message: body.message }),
+      from: serverEnv.CONTACT_DOMAIN,
+      to: serverEnv.CONTACT_EMAIL,
+      replyTo: email,
+      subject: `New message from ${name}`,
+      react: ContactFormEmail({ name, email, message }),
     });
 
     if (error) {

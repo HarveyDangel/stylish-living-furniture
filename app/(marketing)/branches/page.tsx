@@ -9,7 +9,7 @@ export default function BranchesPage() {
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="mx-auto mb-16 max-w-2xl text-center">
-            <h1 className=" md:display-lg mb-4 text-primary font-sans text-6xl">
+            <h1 className="md:display-lg mb-4 font-sans text-6xl text-primary">
               Our Branches
             </h1>
             <p className="text-lg text-on-surface-variant">

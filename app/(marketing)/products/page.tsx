@@ -8,7 +8,7 @@ export default function ProductsPage() {
     <>
       <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-center bg-cover"
           style={{
             backgroundImage: "url(/Images/outdoor_furniture/outdoor1.webp)",
           }}
@@ -28,7 +28,7 @@ export default function ProductsPage() {
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="mx-auto mb-16 max-w-xl text-center">
-            <h2 className="headline-md text-primary mb-4">
+            <h2 className="headline-md mb-4 text-primary">
               Explore Our Collections
             </h2>
             <p className="body-md text-on-surface-variant">
@@ -65,7 +65,7 @@ export default function ProductsPage() {
       <section className="bg-surface-container py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="mx-auto mb-16 max-w-xl text-center">
-            <h2 className="headline-md text-primary mb-4">Beyond Furniture</h2>
+            <h2 className="headline-md mb-4 text-primary">Beyond Furniture</h2>
             <p className="body-md text-on-surface-variant">
               We do more than sell furniture. From first sketch to final
               placement, we partner with you every step of the way.
@@ -81,7 +81,7 @@ export default function ProductsPage() {
                 <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container text-white">
                   {service.icon}
                 </div>
-                <h3 className="headline-sm text-primary mb-3">
+                <h3 className="headline-sm mb-3 text-primary">
                   {service.title}
                 </h3>
                 <p className="body-md text-on-surface-variant">
