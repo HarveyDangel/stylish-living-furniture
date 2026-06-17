@@ -7,7 +7,7 @@ export function ProductCarousel() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-12 flex items-end justify-between">
           <div>
-            <h2 className="font-medium text-3xl text-primary">
+            <h2 className="font-sans text-4xl text-primary">
               Our Collections
             </h2>
             <p className="mt-2">

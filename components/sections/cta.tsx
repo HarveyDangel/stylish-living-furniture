@@ -15,25 +15,25 @@ export function CTA({
   buttonText = "Get in Touch",
   buttonHref = "/contact",
 }: CTAProps) {
-  return (
-    <section className="bg-primary py-24 md:py-32">
-      <div className="mx-auto max-w-7xl px-5 text-center md:px-16">
-        <h2 className="mb-4 font-medium font-sans text-3xl text-primary-foreground">
-          {title}
-        </h2>
-        <p className="body-lg mx-auto mb-8 max-w-xl text-white/80">
-          {description}
-        </p>
-        <Link
-          href={buttonHref}
-          className={cn(
-            buttonVariants({ variant: "secondary", size: "xl" }),
-            "px-12",
-          )}
-        >
-          {buttonText}
-        </Link>
-      </div>
-    </section>
-  );
+	return (
+		<section className="bg-primary py-24 md:py-32">
+			<div className="mx-auto max-w-7xl px-5 text-center md:px-16">
+				<h2 className="mb-4 font-medium font-sans text-3xl text-primary-foreground tracking-wide">
+					{title}
+				</h2>
+				<p className="body-lg mx-auto mb-8 max-w-xl text-white/80">
+					{description}
+				</p>
+				<Link
+					href={buttonHref}
+					className={cn(
+						buttonVariants({ variant: "secondary", size: "xl" }),
+						"px-12 uppercase tracking-wide"
+					)}
+				>
+					{buttonText}
+				</Link>
+			</div>
+		</section>
+	);
 }
