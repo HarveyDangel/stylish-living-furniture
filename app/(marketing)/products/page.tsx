@@ -8,7 +8,7 @@ export default function ProductsPage() {
     <>
       <section className="relative flex min-h-[50vh] items-center justify-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-center bg-cover"
           style={{
             backgroundImage: "url(/Images/outdoor_furniture/outdoor1.webp)",
           }}

@@ -10,7 +10,7 @@ export default function AboutPage() {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 mx-auto max-w-[1280px] px-5 text-center md:px-16">
-          <h1 className="display-lg-mobile md:display-lg text-white font-sans text-6xl">
+          <h1 className="display-lg-mobile md:display-lg font-sans text-6xl text-white">
             Our Story
           </h1>
           <p className="body-lg mx-auto mt-4 max-w-2xl text-white/70 text-xl">
@@ -23,7 +23,7 @@ export default function AboutPage() {
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="mx-auto max-w-3xl">
-            <h2 className="text-4xl font-sans mb-8 text-center text-primary">
+            <h2 className="mb-8 text-center font-sans text-4xl text-primary">
               Our History
             </h2>
             <div className="space-y-6 text-on-surface-variant leading-relaxed">
@@ -76,14 +76,16 @@ export default function AboutPage() {
       <section className="bg-gray-200 py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
           <div className="grid gap-12 sm:grid-cols-1 md:grid-cols-3">
-            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
+            <div className="rounded-lg border border-primary-container bg-gray-100 bg-surface p-8 shadow-md">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
-                <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
+                <span className="rounded-sm bg-primary p-2 font-sans text-3xl text-white">
                   01
                 </span>
               </div>
-              <h3 className="text-lg font-semibold mb-3 text-primary">Our Mission</h3>
-              
+              <h3 className="mb-3 font-semibold text-lg text-primary">
+                Our Mission
+              </h3>
+
               <p className="body-md text-on-surface-variant leading-relaxed">
                 To craft and curate furniture that enriches everyday life,
                 blending timeless design with enduring quality, while supporting
@@ -91,13 +93,15 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
+            <div className="rounded-lg border border-primary-container bg-gray-100 bg-surface p-8 shadow-md">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
-                <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
+                <span className="rounded-sm bg-primary p-2 font-sans text-3xl text-white">
                   02
                 </span>
               </div>
-              <h3 className="text-lg font-semibold mb-3 text-primary">Our Vision</h3>
+              <h3 className="mb-3 font-semibold text-lg text-primary">
+                Our Vision
+              </h3>
               <p className="body-md text-on-surface-variant leading-relaxed">
                 To be the most trusted furniture brand in the Philippines, known
                 not only for the beauty of our products, but for the integrity
@@ -105,13 +109,15 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="rounded-lg bg-surface p-8 shadow-md border border-primary-container bg-gray-100">
+            <div className="rounded-lg border border-primary-container bg-gray-100 bg-surface p-8 shadow-md">
               <div className="mb-4 flex h-14 w-14 items-center justify-center rounded bg-primary-container">
-                <span className="text-3xl text-white bg-primary rounded-sm p-2 font-sans">
+                <span className="rounded-sm bg-primary p-2 font-sans text-3xl text-white">
                   03
                 </span>
               </div>
-              <h3 className="text-lg font-semibold mb-3 text-primary">Our Goals</h3>
+              <h3 className="mb-3 font-semibold text-lg text-primary">
+                Our Goals
+              </h3>
               <p className="body-md text-on-surface-variant leading-relaxed">
                 Expand our reach to every province in the region, deepen our
                 commitment to eco-friendly materials, and continue building a
@@ -124,7 +130,7 @@ export default function AboutPage() {
 
       <section className="bg-surface py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-5 md:px-16">
-          <h2 className="text-4xl font-sans mb-12 text-center text-primary">
+          <h2 className="mb-12 text-center font-sans text-4xl text-primary">
             Our Values
           </h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -136,7 +142,9 @@ export default function AboutPage() {
                 <div className="mb-4 flex items-center justify-center text-primary">
                   {value.icon}
                 </div>
-                <h3 className="text-md font-semibold mb-2 text-primary">{value.title}</h3>
+                <h3 className="mb-2 font-semibold text-md text-primary">
+                  {value.title}
+                </h3>
                 <p className="body-md text-on-surface-variant">
                   {value.description}
                 </p>
