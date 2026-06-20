@@ -1,20 +1,70 @@
-export interface Collection {
+export interface ProductCategory {
   name: string;
-  image: string;
+  slug: string;
+  description: string;
+  folder: string;
+  imageCount: number;
+  imagePrefix: string;
 }
 
-export const categories: Collection[] = [
-  { name: "Outdoor Living", image: "/Images/outdoor_furniture/outdoor1.webp" },
-  { name: "Garden Retreat", image: "/Images/outdoor_furniture/outdoor2.webp" },
-  { name: "Patio Comfort", image: "/Images/outdoor_furniture/outdoor3.webp" },
-  { name: "Alfresco Dining", image: "/Images/outdoor_furniture/outdoor4.webp" },
+export const categories: ProductCategory[] = [
   {
-    name: "Sunroom Collection",
-    image: "/Images/outdoor_furniture/outdoor5.webp",
+    name: "Living Furniture",
+    slug: "living",
+    description:
+      "Comfortable and stylish pieces to make your living space feel like home.",
+    folder: "living_furniture",
+    imageCount: 12,
+    imagePrefix: "living",
   },
-  { name: "Terrace Living", image: "/Images/outdoor_furniture/outdoor6.webp" },
   {
-    name: "Poolside Elegance",
-    image: "/Images/outdoor_furniture/outdoor7.webp",
+    name: "Bedroom Furniture",
+    slug: "bedroom",
+    description:
+      "Create your personal sanctuary with our curated bedroom collections.",
+    folder: "bedroom_furniture",
+    imageCount: 15,
+    imagePrefix: "bedroom",
+  },
+  {
+    name: "Dining Furniture",
+    slug: "dining",
+    description:
+      "Gather around thoughtfully designed tables and seating for every meal.",
+    folder: "dining_furniture",
+    imageCount: 15,
+    imagePrefix: "dining",
+  },
+  {
+    name: "Office Furniture",
+    slug: "office",
+    description:
+      "Functional and elegant workspaces designed for productivity and comfort.",
+    folder: "office_furniture",
+    imageCount: 15,
+    imagePrefix: "office",
+  },
+  {
+    name: "Outdoor Furniture",
+    slug: "outdoor",
+    description:
+      "Extend your living space outdoors with durable, all-weather designs.",
+    folder: "outdoor_furniture",
+    imageCount: 7,
+    imagePrefix: "outdoor",
   },
 ];
+
+export function getCategoryImages(category: ProductCategory): string[] {
+  return Array.from(
+    { length: category.imageCount },
+    (_, i) =>
+      `/Images/Products/${category.folder}/${category.imagePrefix}${i + 1}.webp`,
+  );
+}
+
+export function getCategoryBySlug(slug: string) {
+  const category = categories.find((c) => c.slug === slug);
+  if (!category) return undefined;
+  return { ...category, images: getCategoryImages(category) };
+}
