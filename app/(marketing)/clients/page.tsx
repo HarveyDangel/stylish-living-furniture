@@ -35,7 +35,7 @@ export default function ClientsPage() {
                 {group.clients.map((client) => (
                   <div
                     key={client.name}
-                    className="flex aspect-[3/2] items-center justify-center rounded-lg border border-outline-variant bg-surface-container-low p-4 transition-shadow hover:shadow-[var(--shadow-floating)]"
+                    className="flex aspect-3/2 items-center justify-center rounded-lg border border-outline-variant bg-surface-container-low p-4 transition-shadow hover:shadow-(--shadow-floating)"
                   >
                     <div className="relative h-full w-full">
                       <Image

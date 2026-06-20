@@ -16,7 +16,7 @@ export default function AboutPage() {
           style={{ backgroundImage: "url(/Images/about.webp)" }}
         />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 mx-auto max-w-[1280px] px-5 text-center md:px-16">
+        <div className="relative z-10 mx-auto max-w-7xl px-5 text-center md:px-16">
           <h1 className="display-lg-mobile md:display-lg font-sans text-6xl text-white">
             Our Story
           </h1>
