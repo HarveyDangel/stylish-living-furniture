@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CTA } from "@/components/sections/cta";
 import { branches } from "@/data/branches";
+
+export const metadata: Metadata = {
+  title: "Our Branches",
+  description:
+    "Visit Stylish Living Furniture at any of our branches across the Visayas and Bicol region. Find the branch nearest to you.",
+};
 
 export default function BranchesPage() {
   return (
@@ -22,7 +29,7 @@ export default function BranchesPage() {
             {branches.map((branch) => (
               <div
                 key={branch.name}
-                className="group overflow-hidden rounded-lg border border-outline-variant bg-surface-container-low shadow-[var(--shadow-floating)]"
+                className="group overflow-hidden rounded-lg border border-outline-variant bg-surface-container-low shadow-(--shadow-floating)"
               >
                 <div className="relative h-64 overflow-hidden">
                   <Image
@@ -31,7 +38,7 @@ export default function BranchesPage() {
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-3 left-4">
                     <h2 className="headline-sm text-white">{branch.name}</h2>
                     <span className="label-sm text-white/70">

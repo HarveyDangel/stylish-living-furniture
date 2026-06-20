@@ -8,7 +8,10 @@ export const env = createEnv({
     UPSTASH_REDIS_REST_TOKEN: v.pipe(v.string(), v.minLength(1)),
     CONTACT_DOMAIN: v.pipe(v.string(), v.minLength(1)),
     CONTACT_EMAIL: v.pipe(v.string(), v.email()),
-    NODE_ENV: v.optional(v.picklist(["development", "test", "production"]), "development"),
+    NODE_ENV: v.optional(
+      v.picklist(["development", "test", "production"]),
+      "development",
+    ),
   },
   /*
    * For Next.js >= 13.4.4, we can pass the entire process.env to the server runtime.

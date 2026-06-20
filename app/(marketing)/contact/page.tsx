@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Stylish Living Furniture. Visit our showroom, call us, or send a message for inquiries, consultations, and custom orders.",
+};
 
 export default function ContactPage() {
   return (
@@ -65,26 +72,26 @@ export default function ContactPage() {
         </div>
       </section>
 
-			<section className="bg-surface-container py-24 md:py-32">
-				<div className="mx-auto max-w-7xl px-5 md:px-16">
-					<div className="mb-8 text-center">
-						<h2 className="headline-md text-primary">Find Us</h2>
-					</div>
-					<div className="overflow-hidden rounded-lg border border-outline-variant">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d124.9935731!3d11.2162609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x330876e21e31dd59%3A0xbe4ad3d13fe599d7!2sSTYLISH%20LIVING%20FURNITURE!5e0!3m2!1sen!2sph!4v1"
-							width="100%"
-							height="380"
-							style={{ border: 0 }}
-							allowFullScreen
-							loading="lazy"
-							referrerPolicy="no-referrer-when-downgrade"
-							title="Tacloban Main Branch Location"
-							className="rounded-lg"
-						/>
-					</div>
-				</div>
-			</section>
-		</>
-	);
+      <section className="bg-surface-container py-24 md:py-32">
+        <div className="mx-auto max-w-7xl px-5 md:px-16">
+          <div className="mb-8 text-center">
+            <h2 className="headline-md text-primary">Find Us</h2>
+          </div>
+          <div className="overflow-hidden rounded-lg border border-outline-variant">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d124.9935731!3d11.2162609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x330876e21e31dd59%3A0xbe4ad3d13fe599d7!2sSTYLISH%20LIVING%20FURNITURE!5e0!3m2!1sen!2sph!4v1"
+              width="100%"
+              height="380"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Tacloban Main Branch Location"
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }

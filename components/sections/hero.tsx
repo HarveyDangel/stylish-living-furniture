@@ -18,15 +18,26 @@ export function Hero() {
           Handcrafted furniture that brings warmth and character to every space.
           Discover pieces built to last a lifetime.
         </p>
-        <Link
-          href="/products"
-          className={cn(
-            buttonVariants({ variant: "secondary", size: "xl" }),
-            "px-12 uppercase tracking-wide",
-          )}
-        >
-          Explore Collection
-        </Link>
+        <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Link
+            href="/products"
+            className={cn(
+              buttonVariants({ variant: "secondary", size: "xl" }),
+              "px-12 uppercase tracking-wide",
+            )}
+          >
+            Explore Collection
+          </Link>
+          <Link
+            href="/contact"
+            className={cn(
+              buttonVariants({ variant: "secondaryOutline", size: "xl" }),
+              "px-12 uppercase tracking-wide",
+            )}
+          >
+            Message Us
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { CTA } from "@/components/sections/cta";
 import { clientGroups } from "@/data/clients";
+
+export const metadata: Metadata = {
+  title: "Our Clients",
+  description:
+    "Trusted by government agencies, educational institutions, and private organizations across the Philippines. See who we've furnished.",
+};
 
 export default function ClientsPage() {
   return (
@@ -28,7 +35,7 @@ export default function ClientsPage() {
                 {group.clients.map((client) => (
                   <div
                     key={client.name}
-                    className="flex aspect-[3/2] items-center justify-center rounded-lg border border-outline-variant bg-surface-container-low p-4 transition-shadow hover:shadow-[var(--shadow-floating)]"
+                    className="flex aspect-3/2 items-center justify-center rounded-lg border border-outline-variant bg-surface-container-low p-4 transition-shadow hover:shadow-(--shadow-floating)"
                   >
                     <div className="relative h-full w-full">
                       <Image

@@ -1,10 +1,10 @@
 import { ipAddress } from "@vercel/functions";
 import { Resend } from "resend";
 import * as v from "valibot";
+import { ContactFormEmail } from "@/components/emails/contact-form";
+import { serverEnv } from "@/env";
 import { ratelimit } from "@/lib/rate-limit";
 import { contactFormSchema } from "@/lib/validations/contact-form";
-import { serverEnv } from "@/env";
-import { ContactFormEmail } from "@/components/emails/contact-form";
 
 const resend = new Resend(serverEnv.RESEND_API_KEY);
 
