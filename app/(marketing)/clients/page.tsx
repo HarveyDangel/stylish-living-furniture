@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { CTA } from "@/components/sections/cta";
 import { clientGroups } from "@/data/clients";
+
+export const metadata: Metadata = {
+  title: "Our Clients",
+  description:
+    "Trusted by government agencies, educational institutions, and private organizations across the Philippines. See who we've furnished.",
+};
 
 export default function ClientsPage() {
   return (

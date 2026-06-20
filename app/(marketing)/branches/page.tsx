@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CTA } from "@/components/sections/cta";
 import { branches } from "@/data/branches";
+
+export const metadata: Metadata = {
+  title: "Our Branches",
+  description:
+    "Visit Stylish Living Furniture at any of our branches across the Visayas and Bicol region. Find the branch nearest to you.",
+};
 
 export default function BranchesPage() {
   return (

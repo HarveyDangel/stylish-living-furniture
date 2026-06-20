@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import { CTA } from "@/components/sections/cta";
+
+export const metadata: Metadata = {
+  title: "About",
+  description:
+    "Discover the story behind Stylish Living Furniture — our commitment to quality craftsmanship, timeless design, and transforming spaces across the Philippines.",
+};
 
 export default function AboutPage() {
   return (

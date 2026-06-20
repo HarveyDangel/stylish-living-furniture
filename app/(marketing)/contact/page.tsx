@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ContactForm } from "@/components/contact-form";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+
+export const metadata: Metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch with Stylish Living Furniture. Visit our showroom, call us, or send a message for inquiries, consultations, and custom orders.",
+};
 
 export default function ContactPage() {
   return (
