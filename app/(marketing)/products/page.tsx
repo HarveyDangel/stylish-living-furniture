@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CTA } from "@/components/sections/cta";
 import { categories, getCategoryImages } from "@/data/collections";
+import { services } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Our Products",
