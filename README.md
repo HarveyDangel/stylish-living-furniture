@@ -9,14 +9,6 @@ A furniture brand website built with **Next.js 16**, **Tailwind CSS v4**, and th
 - **Layout:** Fixed 12-column grid (1280px max-width), 8px spacing scale, generous white space
 - **Shapes:** Soft architectural — 4px default radius, 8px for cards
 
-## Getting Started
-
-```bash
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to see the result.
-
 ## Tech Stack
 
 - **Framework:** Next.js 16 (Turbopack)
